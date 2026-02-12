@@ -1,0 +1,5 @@
+node_modules
+dist
+example/server/gen
+example/client/gen
+.DS_Store
