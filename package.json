@@ -1,13 +1,18 @@
 {
 	"name": "@lucaconlaq/grape-cola",
-	"version": "0.1.0",
+	"version": "1.0.2",
 	"description": "A thin wrapper that gives grpc-js a better DX",
-	"keywords": ["grpc", "grpc-js", "middleware", "typescript"],
+	"keywords": [
+		"grpc",
+		"grpc-js",
+		"middleware",
+		"typescript"
+	],
 	"license": "MIT",
 	"author": "lucaconlaq",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/lucaconlaq/grape-cola.git"
+		"url": "git+https://github.com/lucaconlaq/grape-cola.git"
 	},
 	"homepage": "https://github.com/lucaconlaq/grape-cola#readme",
 	"bugs": {
@@ -22,7 +27,9 @@
 			"import": "./dist/index.js"
 		}
 	},
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"engines": {
 		"node": ">=20"
 	},
@@ -32,9 +39,9 @@
 		"check": "tsc --noEmit && biome check src test",
 		"format": "biome format --write src test",
 		"lint": "biome lint --write src test",
-		"release:patch": "npm run build && npm version patch && npm publish --access public",
-		"release:minor": "npm run build && npm version minor && npm publish --access public",
-		"release:major": "npm run build && npm version major && npm publish --access public",
+		"release:patch": "npm run build && npm version patch --no-git-tag-version && npm publish --access public",
+		"release:minor": "npm run build && npm version minor --no-git-tag-version && npm publish --access public",
+		"release:major": "npm run build && npm version major --no-git-tag-version && npm publish --access public",
 		"example:gen": "tsx example/script/gen-grpc.ts",
 		"example:server:build": "tsc -p example/server/tsconfig.json",
 		"example:server:run": "tsx example/server/main.ts",
