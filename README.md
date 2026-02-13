@@ -1,8 +1,8 @@
-<p align="center">
-  <img src="./.github/logo.png" alt="Grape Cola" />
-</p>
-
 # Grape Cola
+
+<p align="center">
+  <img src="./.github/logo.png" alt="Grape Cola" width="200" />
+</p>
 
 **What it is** — a thin wrapper that gives `grpc-js` a better DX.
 
