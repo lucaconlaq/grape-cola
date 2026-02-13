@@ -1,0 +1,8 @@
+[tools]
+node = "22.14.0"
+psst = "0.7.2"
+claude = "latest"
+
+[tool_alias]
+psst = "npm:@lucaconlaq/psst"
+claude = "npm:@anthropic-ai/claude-code"
