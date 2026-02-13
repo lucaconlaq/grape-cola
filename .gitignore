@@ -3,3 +3,4 @@ dist
 example/server/gen
 example/client/gen
 .DS_Store
+psst.json
