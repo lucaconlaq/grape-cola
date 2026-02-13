@@ -4,6 +4,10 @@
   <img src="./.github/logo.png" alt="Grape Cola" width="200" />
 </p>
 
+[![npm](https://img.shields.io/npm/v/@lucaconlaq/grape-cola)](https://www.npmjs.com/package/@lucaconlaq/grape-cola)
+[![biome](https://img.shields.io/badge/code_style-biome-56BEB8)](https://biomejs.dev)
+[![vitest](https://img.shields.io/badge/tested_with-vitest-6E9FEC)](https://vitest.dev)
+
 **What it is** — a thin wrapper that gives `grpc-js` a better DX.
 
 **What it isn't** — a new protocol. Any gRPC client connects as usual.
